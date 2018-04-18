@@ -1,0 +1,47 @@
+/**app.wxss**/
+
+.container {
+  padding: 0 16px;
+}
+
+.title {
+  margin: 16px 0 -16px;
+  height: 48px;
+  line-height: 1;
+  color: #333;
+  font-size: 19px;
+  font-weight: 600;
+  position: relative;
+}
+
+.item-box {
+  font-size: 14px;
+  padding: 17px 32px 28px 32px;
+}
+
+.item {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  position: relative;
+  color: #333;
+  border-top: 1rpx solid rgba(214, 214, 214, 0.5);
+}
+
+.item:nth-child(1) {
+  border-top: 0;
+}
+
+icon {
+  position: absolute;
+  top: 6px;
+  right: 0rpx;
+}
+
+.desc {
+  font-size: 11pt;
+  color: #999;
+  margin: 8px 0 30px 0;
+}

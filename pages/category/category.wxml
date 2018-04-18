@@ -1,0 +1,17 @@
+<!--pages/category/category.wxml-->
+<view class="container">
+  <view wx:if="{{desc}}" class="desc">
+    {{desc}}
+  </view>
+  <block wx:for="{{categories}}" wx:key="item.id">
+    <view class="title" catchtap="tap" data-info="{{item.desc}}">
+      {{item.name}}
+    </view>
+    <view class="item-box">
+      <view class="item" wx:for="{{item.children}}" wx:key="item.id" catchtap="tap" data-info="{{item.desc}}">
+        {{item.name}}
+        <icon wx:if="{{item.desc}}" type="search" size="{{12}}" />
+      </view>
+    </view>
+  </block>
+</view>

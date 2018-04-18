@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{categories}}" wx:key="item.id">
+    <view class="title">
+      {{item.name}}
+    </view>
+    <view class="item-box">
+      <navigator url="/pages/category/category?id={{item.id}}" class="item" wx:for="{{item.children}}" wx:key="item.id">
+        {{item.name}}
+        <icon  type="search" size="{{12}}" />
+      </navigator>
+    </view>
+  </block>
+</view>
